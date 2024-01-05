@@ -17,7 +17,7 @@ class Menu(models.Model):
     price = models.IntegerField(null=False)
 
     def __str__(self):
-        return self.title
+        return f'{self.title} : {str(self.price)}'
 
 
 class MenuItem(models.Model):
